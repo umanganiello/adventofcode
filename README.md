@@ -1,1 +1,3 @@
-# Solutions to [Advent of Code](https://adventofcode.com) puzzles.
+# adventofcode
+Solutions to [Advent of Code](https://adventofcode.com) puzzles.
+
