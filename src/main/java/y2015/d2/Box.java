@@ -51,6 +51,10 @@ public class Box {
 	public int getNeededPaper() {
 		return 2*length*width + 2*width*height + 2*height*length + getSmallestSideArea();
 	}
+	
+	public int getNeededRibbon() {
+		return (length*width*height) + getSmallestSidePerimeter();
+	}
 
 	private int getSmallestSideArea() {
 		int measures[] = {length, width, height};
@@ -68,5 +72,23 @@ public class Box {
 			}
 		}
 		return min1*min2;
+	}
+	
+	private int getSmallestSidePerimeter() {
+		int measures[] = {length, width, height};
+		int min1=measures[0], min2=measures[1];
+		
+		for(int i=1; i<3; i++) {
+			if(measures[i] < min1) {
+				min2 = min1;
+				min1 = measures[i];
+			}
+			else {
+				if(measures[i] < min2) {
+					min2 = measures[i];
+				}
+			}
+		}
+		return 2*(min1+min2);
 	}
 }
