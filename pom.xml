@@ -5,11 +5,11 @@
 	<groupId>um</groupId>
 	<artifactId>adventofcode</artifactId>
 	<version>0.0.1</version>
-	
+
 	<properties>
 		<app.main.class>y2015.d19.Part1</app.main.class>
 	</properties>
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -48,6 +48,11 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-lang3</artifactId>
 			<version>3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>1.11</version>
 		</dependency>
 	</dependencies>
 </project>
